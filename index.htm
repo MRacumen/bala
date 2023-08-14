@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Book Rooms in Kodaikanal</title>
+</head>
+<body>
+    <header>
+         <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Bala.com Logo">
+                <h1>Bala.com</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#benefit">Benefit</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>    
+    </header>
+    <main>
+        <section class="booking-form">
+            <div class="background-image">
+         <h2>Find Your Perfect Room</h2>
+        <form action="booking.php" method="post">
+                <label for="check-in-date">Check-in Date:</label>
+                <input type="date" id="check-in-date" name="check-in-date" required>
+                
+                <label for="guests">Number of Rooms:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+                
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type">
+                    <option value="child">Child</option>
+                    <option value="couples">Couples</option>
+                    <option value="individual">Individual</option>
+                    <option value="couples">Family</option>
+                </select>
+                <div class="buttons">
+                  <button type="submit" class="book-now">Book Now</button>
+                  <button class="call-now">Call Now</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+<main>
+    <section class="room-cards">
+        <div class="room-card">
+            <img src="room1.jpg" alt="Room 1">
+            <h3>Deluxe Room</h3>
+            <p>Spacious room with a stunning view.</p>
+            <p class="price">Price: ₹3,000 per night</p>
+            <button class="location-button">View Location</button>
+            <button class="book-now">Book Now</button>
+        </div>
+        
+        <div class="room-card">
+            <img src="room2.jpg" alt="Room 2">
+            <h3>Family Suite</h3>
+            <p>Perfect for a family getaway.</p>
+            <p class="price">Price: ₹4,500 per night</p>
+            <button class="location-button">View Location</button>
+            <button class="book-now">Book Now</button>
+        </div>
+        
+        <div class="room-card">
+            <img src="room3.jpg" alt="Room 3">
+            <h3>Premium Suite</h3>
+            <p>Luxurious suite with modern amenities.</p>
+            <p class="price">Price: ₹6,500 per night</p>
+            <button class="location-button">View Location</button>
+            <button class="book-now">Book Now</button>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2023 Book Rooms in Kodaikanal</p>
+    </footer>
+</body>
+</html>
+
